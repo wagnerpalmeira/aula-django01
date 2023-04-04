@@ -1,0 +1,9 @@
+{% for message in messages %}
+    {{message}}
+{% endfor %}
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="titulo" placeholder="Digite o titulo">
+    <input type="text" name="subtitulo" placeholder="Digite o subtitulo">
+    <input type="submit" value="Cadastrar">
+</form>
